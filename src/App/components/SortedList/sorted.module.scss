@@ -1,0 +1,43 @@
+.tickets__sort {
+  margin-bottom: 20px;
+}
+
+.sort {
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: 0.04em;
+  text-align: center;
+
+  &__item {
+    padding: 15px;
+    color: #4a4a4a;
+    border: 1px solid #dfe5ec;
+    margin-left: -1px;
+    background-color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-color: #f1fcff;
+    }
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    &_active {
+      background-color: #2196f3;
+      color: #fff;
+      border: 1px solid #2196f3;
+      pointer-events: none;
+    }
+  }
+}
